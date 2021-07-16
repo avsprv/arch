@@ -1,1 +1,1 @@
-# arch-etc
+# arch
