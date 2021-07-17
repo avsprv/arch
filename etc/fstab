@@ -1,0 +1,10 @@
+# /dev/sda2
+/dev/sda2           	/         	btrfs     	rw,noatime,nodiratime,space_cache,subvolid=256,subvol=/root	0 1
+
+# /dev/sda1
+UUID=12F2-5020      	/boot     	vfat      	rw,noatime,nodiratime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/sda3
+UUID=8aafee6c-553d-4f7d-aee6-6ae967379b40	none      	swap      	defaults  	0 0
+
+tmpfs /var/log tmpfs defaults,noatime,nodiratime,mode=0755,size=1024M 0 0
