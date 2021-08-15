@@ -15,6 +15,7 @@ cpupower
 crda
 cronie
 cryptsetup
+curl
 dconf-editor
 device-mapper
 dhclient
@@ -52,6 +53,7 @@ gnome-desktop
 gnome-disk-utility
 gnome-font-viewer
 gnome-keyring
+gnome-online-accounts
 gnome-screenshot
 gnome-session
 gnome-settings-daemon
