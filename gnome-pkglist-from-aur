@@ -1,15 +1,15 @@
 aic94xx-firmware
 btrfsmaintenance
-gnome-shell-extension-gnome-ui-tune-git
-gnome-shell-extension-vertical-overview-git
-gtkhash-nautilus
+gnome-shell-extension-bluetooth-quick-connect
+gnome-shell-extension-clipboard-indicator
+gnome-shell-extension-unite
+gtkhash-nautilus-git
 intel-hybrid-codec-driver
 inxi
 matcha-gtk-theme
 mkinitcpio-openswap
 modprobed-db
 nautilus-admin
-noto-fonts-emoji
 papirus-maia-icon-theme-git
 qgnomeplatform
 rts5227-dkms
@@ -18,6 +18,5 @@ sublime-text-4
 upd72020x-fw
 visual-studio-code-bin
 wd719x-firmware
-webapp-manager
 xiccd
 zoom

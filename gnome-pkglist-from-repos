@@ -58,6 +58,7 @@ gnome-screenshot
 gnome-session
 gnome-settings-daemon
 gnome-shell
+gnome-shell-extension-appindicator
 gnome-shell-extensions
 gnome-system-monitor
 gnome-terminal
@@ -132,6 +133,7 @@ networkmanager
 nfs-utils
 nm-connection-editor
 noto-fonts
+noto-fonts-emoji
 nss-mdns
 ntfs-3g
 ntp
