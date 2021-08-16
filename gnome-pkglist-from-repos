@@ -131,9 +131,13 @@ mutter
 nautilus
 networkmanager
 nfs-utils
+nftables
 nm-connection-editor
+nodejs
 noto-fonts
 noto-fonts-emoji
+npm
+npm-check-updates
 nss-mdns
 ntfs-3g
 ntp
@@ -183,10 +187,8 @@ ttf-dejavu
 ttf-droid
 ttf-fira-code
 ttf-hack
-ttf-ibm-plex
 ttf-inconsolata
 ttf-indic-otf
-ttf-jetbrains-mono
 ttf-liberation
 ttf-nerd-fonts-symbols
 ttf-opensans
@@ -196,9 +198,11 @@ ttf-ubuntu-font-family
 uget
 unace
 unrar
+unzip
 usb_modeswitch
 usbutils
 util-linux
+vim
 vulkan-intel
 wget
 which
@@ -217,3 +221,4 @@ xorg-xinit
 xz
 yelp
 zam-plugins
+zip
