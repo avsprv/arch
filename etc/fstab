@@ -1,13 +1,11 @@
-# /dev/sda2
-UUID=52eb32cb-258f-4e3c-8cd1-b6efd00c96e9	/         	btrfs     	rw,noatime,nodiratime,compress=zstd:3,nossd,space_cache,autodefrag,subvolid=256,subvol=/root	0 1
+# /dev/sda2 root
+UUID=aa46e3b5-e900-448c-bd37-39be6929f457 / btrfs rw,noatime,nodiratime,compress=zstd:3,nossd,space_cache,autodefrag,subvolid=256,subvol=/root 0 1
 
-# /dev/sda1
-UUID=0FDD-AEA0      	/boot     	vfat      	noauto,comment=systemd.automount,rw,noatime,nodiratime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+# /dev/sda1 boot
+UUID=E25C-C722 /boot vfat noauto,comment=systemd.automount,rw,noatime,nodiratime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro 0 2
 
-# /dev/sda3
-UUID=8d5624f8-9885-4eaa-b02f-49ff5758b1ab	/home     	btrfs     	rw,noatime,nodiratime,compress=zstd:3,nossd,space_cache,autodefrag,subvolid=5,subvol=/	0 1
+# /dev/sda3 swap
+UUID=5ee37490-e7aa-409c-ba1b-72d80346ef69 none swap defaults 0 0
 
-# /dev/sda4
-UUID=ccfa4905-2bca-4b7d-924d-cc5e412de1e4	none      	swap      	defaults  	0 0
-
+# tmpfs
 tmpfs /var/log tmpfs defaults,noatime,nodiratime,mode=0755,size=1024M 0 0
