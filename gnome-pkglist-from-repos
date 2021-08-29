@@ -5,7 +5,6 @@ adwaita-icon-theme
 alacarte
 alsa-firmware
 alsa-utils
-baobab
 bash
 bash-completion
 btrfs-progs
@@ -62,8 +61,8 @@ gnome-shell-extension-appindicator
 gnome-shell-extensions
 gnome-system-monitor
 gnome-terminal
-gnome-themes-standard
-gnome-tweak-tool
+gnome-themes-extra
+gnome-tweaks
 gnome-user-docs
 gnome-user-share
 gparted
@@ -105,12 +104,6 @@ jfsutils
 jre-openjdk
 jre-openjdk-headless
 less
-lib32-libva-intel-driver
-lib32-libxvmc
-lib32-mesa-demos
-lib32-pipewire
-lib32-pipewire-jack
-lib32-vulkan-intel
 libappindicator-gtk3
 libreoffice-fresh
 libva-intel-driver
@@ -187,13 +180,10 @@ ttf-dejavu
 ttf-droid
 ttf-fira-code
 ttf-hack
-ttf-inconsolata
-ttf-indic-otf
 ttf-liberation
 ttf-nerd-fonts-symbols
 ttf-opensans
 ttf-roboto
-ttf-sazanami
 ttf-ubuntu-font-family
 uget
 unace
