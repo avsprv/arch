@@ -84,6 +84,12 @@ if empty(glob("~/.vim/autoload/plug.vim"))
     execute '!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.github.com/junegunn/vim-plug/master/plug.vim'
 endif
 
+" Listchars
+set listchars=eol:↵,tab:>-,trail:~,extends:>,precedes:<,space:᠂
+noremap <F5> :set list!<CR>
+inoremap <F5> <C-o>:set list!<CR>
+cnoremap <F5> <C-c>:set list!<CR>
+
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
