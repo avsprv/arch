@@ -57,6 +57,7 @@ gimp-help-en
 gimp-help-ru
 git
 gnome-backgrounds
+gnome-boxes
 gnome-calculator
 gnome-characters
 gnome-color-manager
@@ -123,6 +124,7 @@ jfsutils
 jre-openjdk
 jre-openjdk-headless
 libcmrt
+libgnome
 libreoffice-fresh
 libreoffice-fresh-ru
 libtool
@@ -179,6 +181,7 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 pkgconf
+pkgfile
 polkit-gnome
 powertop
 qgnomeplatform
@@ -229,6 +232,7 @@ unzip
 upd72020x-fw
 usb_modeswitch
 usbutils
+vi
 vim
 vino
 visual-studio-code-bin
@@ -240,7 +244,6 @@ which
 xdg-desktop-portal
 xdg-user-dirs
 xdg-user-dirs-gtk
-xf86-input-synaptics
 xf86-video-intel
 xiccd
 xorg-fonts-cyrillic
