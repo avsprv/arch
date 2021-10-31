@@ -2,7 +2,7 @@ GRUB_DEFAULT=saved
 GRUB_TIMEOUT=0
 GRUB_TIMEOUT_STYLE=hidden
 GRUB_DISTRIBUTOR="Manjaro"
-GRUB_CMDLINE_LINUX_DEFAULT="quiet i915.modeset=1 i915.fastboot=1 resume=UUID=148bfa98-7bc4-4542-9ad3-f8e6b1a38e36 root=UUID=0fe1067f-e2d7-42fc-b6d7-0f9f614baa53 rootfstype=btrfs rootflags=subvol=/@ libahci.ignore_sss=1 raid=noautodetect apparmor=1 security=apparmor lpj=7648916 loglevel=3 udev.log_priority=3 panic=10"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet i915.modeset=1 i915.fastboot=1 resume=UUID=0a7cd31b-0721-4407-adb9-01d8836f36f6 root=UUID=aeba9bc0-2a57-495d-b16d-6c974278db9a rootfstype=btrfs rootflags=subvol=/@ libahci.ignore_sss=1 raid=noautodetect apparmor=1 security=apparmor lpj=7648823 loglevel=3 udev.log_priority=3 panic=10"
 GRUB_CMDLINE_LINUX=""
 
 # If you want to enable the save default function, uncomment the following
