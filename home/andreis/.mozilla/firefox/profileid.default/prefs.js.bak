@@ -173,7 +173,7 @@ user_pref("extensions.webcompat.perform_ua_overrides", true);
 user_pref("extensions.webextensions.ExtensionStorageIDB.migrated.adguardadblocker@adguard.com", true);
 user_pref("extensions.webextensions.ExtensionStorageIDB.migrated.screenshots@mozilla.org", true);
 user_pref("extensions.webextensions.ExtensionStorageIDB.migrated.{036a55b4-5e72-4d05-a06c-cba2dfcc134a}", true);
-user_pref("extensions.webextensions.remote", false);
+user_pref("extensions.webextensions.remote", true);
 
 user_pref("fission.experiment.max-origins.last-disqualified", 0);
 user_pref("fission.experiment.max-origins.qualified", true);
