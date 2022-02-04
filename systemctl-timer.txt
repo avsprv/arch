@@ -1,0 +1,7 @@
+logrotate.timer
+man-db.timer
+pamac-cleancache.timer
+pamac-mirrorlist.timer
+pkgfile-update.timer
+shadow.timer
+systemd-tmpfiles-clean.timer

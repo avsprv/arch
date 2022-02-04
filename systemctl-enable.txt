@@ -1,0 +1,15 @@
+AdGuardHome.service
+bluetooth.service
+cronie.service
+getty@.service
+haveged.service
+NetworkManager-dispatcher.service
+NetworkManager.service
+nftables.service
+pamac-cleancache.timer
+pamac-mirrorlist.timer
+pkgfile-update.timer
+remote-fs.target
+sddm.service
+sshd.service
+systemd-timesyncd.service

@@ -1,0 +1,4 @@
+gst-plugins-openh264
+openh264
+upd72020x-fw
+yandex-disk
