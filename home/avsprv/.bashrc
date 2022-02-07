@@ -95,6 +95,9 @@ alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
+alias mv='mv -i'
+alias rm='rm -i'
+alias la='ls -la'
 
 xhost +local:root > /dev/null 2>&1
 
@@ -107,9 +110,45 @@ shopt -s checkwinsize
 shopt -s expand_aliases
 
 # export QT_SELECT=4
+export HISTTIMEFORMAT="%h %d %H:%M:%S "
+#export HISTIGNORE='&:/*:.*:[bf]g:exit:reboot:clear:pwd:cd:cl:l[.sla]:ps:history*:pacman*:yay*:w:who*:top:htop:kill*:pkill*:uname*:source*'
+export HISTIGNORE='&:/*:.*:[bf]g:exit:reboot:clear:pwd:cd:cl:l[.sla]:ps:history*:w:who*:top:htop:kill*:pkill*:uname*:source*'
+export EDITOR=/usr/bin/vim
+export VISUAL=/usr/bin/vim
+#export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 # Enable history appending instead of overwriting.  #139609
 shopt -s histappend
+
+# Custom settings
+#unset rc
+
+export HISTCONTROL=ignoreboth:erasedups
+shopt -u mailwarn
+unset MAILCHECK
+
+shopt -s histreedit
+shopt -s histverify
+
+PROMPT_COMMAND='history -a'
+
+export HISTSIZE=10000
+export HISTFILESIZE=20000
+#export IGNOREEOF=100
+
+shopt -s autocd
+shopt -s cmdhist
+shopt -s cdspell
+shopt -s cdable_vars
+shopt -s checkhash
+shopt -s checkjobs
+shopt -s dirspell
+shopt -s histreedit
+shopt -s huponexit
+shopt -s nocaseglob
+shopt -s sourcepath
+shopt -s no_empty_cmd_completion
+shopt -s extglob
 
 #
 # # ex - archive extractor
@@ -135,3 +174,4 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
+
