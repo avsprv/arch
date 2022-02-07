@@ -1,0 +1,41 @@
+# Start scripts & commands
+echo "blacklist pcspkr" | tee -a /etc/modprobe.d/blacklist-pcspkr.conf
+modprobe -r pcspkr
+ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
+hwclock --systohc
+# vim /etc/locale.gen
+locale-gen
+# vim /etc/hostname
+mkinitcpio -P
+pacman -Syu --needed \
+linux-zen linux-zen-headers linux-firmware haveged \
+networkmanager \
+dkms coreutils util-linux procps-ng intel-ucode \
+sed awk vi vim strace git curl wget less base-devel ccache \
+bash bash-completion sudo htop pkgfile \
+nftables iptables-nft \
+xorg-server xf86-video-intel xf86-input-libinput \
+gnome-terminal firefox-developer-edition firefox-developer-edition-i18n-en-us firefox-developer-edition-i18n-ru \
+efibootmgr grub
+ln -s /usr/bin/firefox-developer-edition /usr/bin/firefoxqq
+grub-install && grub-mkconfig -o /boot/grub/grub.cfg
+mkinitcpio -P
+systemctl enable nftables.service
+useradd -m -G wheel,systemd-journal -s /bin/bash user1 && passwd user1
+# visudo
+# vipw
+
+systemc enable \
+bluetooth.service fstrim.timer getty@.service haveged.service \
+NetworkManager.service NetworkManager-dispatcher.service 
+
+git clone https://aur.archlinux.org/yay.git
+makepkg -si
+
+yay -Syu \
+aic94xx-firmware upd72020x-fw wd719x-firmware linux-firmware-qlogic \
+pamac-aur \
+archlinux-appstream-data-pamac \
+termius \
+yandex-disk \
+zoom
