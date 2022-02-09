@@ -1,6 +1,4 @@
-# <file system> <dir> <type> <options> <dump> <pass>
-UUID=46E6-6AF6                            /boot/efi     vfat   rw,noatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro 0 2
-#UUID=6ae6c164-b97f-43d4-b93d-98c4cb988900 /             btrfs  rw,noatime,noautodefrag,compress=zstd,discard=async,ssd,commit=120,space_cache=v2,subvolid=5,subvol=/ 0 0
-UUID=6ae6c164-b97f-43d4-b93d-98c4cb988900 /             btrfs  rw,noatime,noautodefrag,compress=zstd,ssd,commit=120,space_cache=v2,subvolid=5,subvol=/ 0 0
-UUID=d29e74b9-deb9-4572-952d-7161e924e357 none          swap   defaults,noatime,sw 0 0
-
+UUID=0DAB-5997 /boot vfat rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro 0 2
+UUID=3860c0e9-095f-4ca1-a543-666aca3b4b9b / btrfs rw,noatime,noautodefrag,compress=zstd:3,ssd,space_cache=v2,commit=120,subvolid=256,subvol=/@root 0 0
+UUID=3860c0e9-095f-4ca1-a543-666aca3b4b9b /home btrfs rw,noatime,noautodefrag,compress=zstd:3,ssd,space_cache=v2,commit=120,subvolid=257,subvol=/@home 0 0
+/dev/mapper/swap none swap defaults 0 0
