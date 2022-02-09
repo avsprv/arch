@@ -2,3 +2,5 @@ UUID=0DAB-5997 /boot vfat rw,relatime,fmask=0022,dmask=0022,codepage=437,iochars
 UUID=3860c0e9-095f-4ca1-a543-666aca3b4b9b / btrfs rw,noatime,noautodefrag,compress=zstd:3,ssd,space_cache=v2,commit=120,subvolid=256,subvol=/@root 0 0
 UUID=3860c0e9-095f-4ca1-a543-666aca3b4b9b /home btrfs rw,noatime,noautodefrag,compress=zstd:3,ssd,space_cache=v2,commit=120,subvolid=257,subvol=/@home 0 0
 /dev/mapper/swap none swap defaults 0 0
+#tmpfs /tmp tmpfs defaults,noatime,mode=1777,size=30% 0 0
+#tmpfs /var/log tmpfs defaults,noatime,mode=0755,size=512M 0 0
