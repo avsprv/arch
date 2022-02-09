@@ -1,0 +1,1 @@
+efibootmgr --bootnum 0000 --bootnum=0000 --label "arch" --disk /dev/sda --part 1 --loader /vmlinuz-linux-zen --unicode 'cryptdevice=/dev/sda2:cryptroot quiet i915.modeset=1 i915.fastboot=1 root=/dev/mapper/cryptroot rootfstype=btrfs rootflags=subvol=@root rw initrd=\intel-ucode.img initrd=\initramfs-linux-zen.img' --verbose
