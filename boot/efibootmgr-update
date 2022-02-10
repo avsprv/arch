@@ -8,7 +8,12 @@ fi
 pacman -Syy --needed --noconfirm linux-zen intel-ucode 2&>/dev/null
 
 efibootmgr -B -b 0000
-efibootmgr -c -d /dev/sda -p 1 -l /vmlinuz-linux-zen -L "arch" -u 'cryptdevice=/dev/sda2:cryptroot initrd=/initramfs-linux-zen.img initrd=/intel-ucode.img fbcon=nodefer quiet splash vt.global_cursor_default=0 i915.modeset=1 i915.fastboot=1 root=/dev/mapper/cryptroot rootfstype=btrfs rootflags=subvol=@root libahci.ignore_sss=1 raid=noautodetect lpj=2294753 loglevel=3 udev.log_priority=3 panic=10' -v
+efibootmgr -c \
+-d /dev/sda \
+-p 1 \
+-l /vmlinuz-linux-zen \
+-L "arch" \
+-u 'cryptdevice=/dev/sda2:cryptroot initrd=/initramfs-linux-zen.img initrd=/intel-ucode.img fbcon=nodefer quiet splash vt.global_cursor_default=0 i915.modeset=1 i915.fastboot=1 root=/dev/mapper/cryptroot rootfstype=btrfs rootflags=subvol=@root libahci.ignore_sss=1 raid=noautodetect lpj=2294753 loglevel=3 udev.log_priority=3 panic=10' -v
 efibootmgr
 
 exit 0
