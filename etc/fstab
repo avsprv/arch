@@ -1,5 +1,5 @@
-UUID=XXXX-XXXX /boot vfat noauto,x-systemd.automount,rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro 0 2
-UUID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX / btrfs rw,noatime,noautodefrag,compress=zstd:3,ssd,space_cache=v2,commit=120,subvolid=256,subvol=/@root 0 0
-UUID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX /home btrfs rw,noatime,noautodefrag,compress=zstd:3,ssd,space_cache=v2,commit=120,subvolid=257,subvol=/@home 0 0
+UUID=xxxx-xxxx /boot vfat noauto,x-systemd.automount,rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro 0 2
+UUID=xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx / btrfs rw,noatime,noautodefrag,compress=zstd:3,ssd,space_cache=v2,commit=120,subvolid=256,subvol=/@root 0 0
+UUID=xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx /home btrfs rw,noatime,noautodefrag,compress=zstd:3,ssd,space_cache=v2,commit=120,subvolid=257,subvol=/@home 0 0
 /dev/mapper/swap none swap defaults,noatime,sw 0 0
 #none /dev/binderfs binder nofail 0 0
