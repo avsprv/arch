@@ -1,6 +1,6 @@
 #!/usr/bin/bash
-# blkid -s UUID -o value
-# dmesg | grep 'lpj='
+##blkid -s UUID -o value
+##dmesg | grep 'lpj='
 
 efibootmgr -B -b 0000
 efibootmgr -c \
