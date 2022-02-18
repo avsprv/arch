@@ -1,4 +1,4 @@
-UUID=xxxx-xxxx /boot vfat rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro 0 2
+UUID=xxxx-xxxx /boot vfat rw,noatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro 0 2
 UUID=xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx / btrfs rw,noatime,noautodefrag,compress=zstd:T0,ssd,space_cache=v2,commit=120,subvolid=256,subvol=/@root 0 0
 UUID=xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx /home btrfs rw,noatime,noautodefrag,compress=zstd:T0,ssd,space_cache=v2,commit=120,subvolid=257,subvol=/@home 0 0
-/dev/mapper/swap none swap defaults,sw,noatime,noautodefrag 0 0
+/dev/mapper/swap none swap defaults,sw,noatime 0 0
