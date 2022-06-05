@@ -1,0 +1,11 @@
+GRUB_GFXMODE=1366x768
+GRUB_CMDLINE_LINUX=""
+GRUB_TIMEOUT=0
+GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
+GRUB_CMDLINE_LINUX_HARDENED="slub_debug=P page_poison=1 slab_nomerge pti=on user.max_user_namespaces=0 kernel.kptr_restrict=1 vsyscall=none"
+GRUB_GFXPAYLOAD_LINUX=keep
+GRUB_DISABLE_RECOVERY=true
+GRUB_CMDLINE_LINUX_DEFAULT='quiet splash=silent fbcon=nodefer logo.nologo loglevel=3 i915.modeset=1 i915.fastboot=1 mds=full,nosmt rootfstype=ext4 libahci.ignore_sss=1 raid=noautodetect lpj=9178956 net.ifnames=0 parsec.enable_exec_on_fuse=1'
+GRUB_DISABLE_SUBMENU=y
+GRUB_DEFAULT=saved
+GRUB_DISABLE_OS_PROBER=true
