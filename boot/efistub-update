@@ -8,7 +8,7 @@ efibootmgr -c \
 -p 1 \
 -l /vmlinuz-linux-zen \
 -L "arch" \
--u 'cryptdevice=/dev/sda2:cryptroot initrd=\initramfs-linux-zen.img initrd=\intel-ucode.img fbcon=nodefer quiet loglevel=3 udev.log_level=3 udev.log_priority=3 splash vt.global_cursor_default=0 i915.modeset=1 i915.fastboot=1 intel_iommu=on root=UUID=xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx rootfstype=btrfs rootflags=subvol=@root rw libahci.ignore_sss=1 raid=noautodetect lpj=xxxxxxx panic=10' \
+-u 'cryptdevice=UUID=xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx:cryptroot initrd=\initramfs-linux-zen.img initrd=\intel-ucode.img fbcon=nodefer quiet loglevel=3 udev.log_level=3 udev.log_priority=3 splash vt.global_cursor_default=0 i915.modeset=1 i915.fastboot=1 intel_iommu=on root=UUID=xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx rootfstype=btrfs rootflags=subvol=@root rw libahci.ignore_sss=1 raid=noautodetect lpj=xxxxxxx panic=10' \
 -v
 
 exit 0
