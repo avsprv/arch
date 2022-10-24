@@ -1,14 +1,14 @@
 #!/usr/bin/bash
-##blkid -s UUID -o value
-##dmesg | grep 'lpj='
+# blkid -s UUID -o value
+# dmesg | grep 'lpj='
 
 efibootmgr -B -b 0000
 efibootmgr -c \
 -d /dev/sda \
 -p 1 \
--l /vmlinuz-linux-zen \
--L "arch" \
--u 'cryptdevice=UUID=xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx:cryptroot initrd=\initramfs-linux-zen.img initrd=\intel-ucode.img fbcon=nodefer quiet loglevel=3 udev.log_level=3 udev.log_priority=3 splash vt.global_cursor_default=0 i915.modeset=1 i915.fastboot=1 intel_iommu=on root=UUID=xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx rootfstype=btrfs rootflags=subvol=@root rw libahci.ignore_sss=1 raid=noautodetect lpj=xxxxxxx panic=10' \
+-l /vmlinuz-linux \
+-L "Arch" \
+-u 'cryptdevice=UUID=xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx:luksdev initrd=\initramfs-linux.img initrd=\intel-ucode.img quiet splash logo.nologo fbcon=nodefer pcie_aspm=off loglevel=3 udev.log_level=3 udev.log_priority=3 i915.modeset=1 i915.fastboot=1 zswap.enabled=0 nowatchdog root=UUID=xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx rootfstype=ext4 rw libahci.ignore_sss=1 raid=noautodetect lpj=xxxxxxx' \
 -v
 
 exit 0
