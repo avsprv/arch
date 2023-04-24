@@ -25,7 +25,7 @@ useradd -m -G wheel,systemd-journal -s /bin/bash user1 && passwd user1
 # visudo
 # vipw
 
-systemc enable \
+systemctl enable \
 bluetooth.service fstrim.timer getty@.service haveged.service \
 NetworkManager.service NetworkManager-dispatcher.service 
 
