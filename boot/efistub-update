@@ -10,7 +10,7 @@ efibootmgr --create \
 --part 1 \
 --label "arch" \
 --loader /vmlinuz-linux-zen \
---unicode 'cryptdevice=UUID=xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx:luksdev initrd=\intel-ucode.img initrd=\initramfs-linux-zen.img quiet splash vt.global_cursor_default=0 bgrt_disable logo.nologo fbcon=nodefer plymouth.enable=1 pcie_aspm=off loglevel=0 udev.log_level=0 debugfs=off rd.emergency=reboot rd.shell=0 panic-on-corruption oops=panic module.sig_enforce=1 lockdown=confidentiality ipv6.disable=1 i915.modeset=1 i915.fastboot=1 zswap.enabled=0 nowatchdog root=UUID=xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx rootfstype=ext4 rw libahci.ignore_sss=1 raid=noautodetect lpj=xxxxxxx kvm-intel.nested=1' \
+--unicode 'cryptdevice=UUID=xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx:luksdev initrd=\intel-ucode.img initrd=\initramfs-linux-zen.img quiet splash vt.global_cursor_default=0 bgrt_disable logo.nologo fbcon=nodefer plymouth.enable=1 mitigations=off spectre_v2=off pcie_aspm=off loglevel=0 udev.log_level=0 debugfs=off rd.emergency=reboot rd.shell=0 panic-on-corruption oops=panic module.sig_enforce=1 lockdown=confidentiality ipv6.disable=1 i915.modeset=1 i915.fastboot=1 zswap.enabled=0 nowatchdog root=UUID=xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx rootfstype=ext4 rw libahci.ignore_sss=1 raid=noautodetect lpj=xxxxxxx kvm-intel.nested=1' \
 --verbose
 
 exit 0
