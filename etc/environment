@@ -3,13 +3,11 @@
 #
 # Syntax: simple "KEY=VAL" pairs on separate lines
 #
+export PAGER=less
+export EDITOR=vim
+export VISUAL=vim
+#[ -n "$DISPLAY" ] && export BROWSER=yandex-browser || export BROWSER=lynx
 LIBVA_DRIVER_NAME=i965
 GST_VAAPI_ALL_DRIVERS=1
 NO_AT_BRIDGE=1
-QT_QPA_PLATFORMTHEME='gnome'
-MOZ_DISABLE_RDD_SANDBOX=1 firefox
-MOZ_DISABLE_RDD_SANDBOX=1 firefox-developer-edition
-MOZ_ENABLE_WAYLAND=1 firefox
-MOZ_ENABLE_WAYLAND=1 firefox-developer-edition
-MOZ_WEBRENDER=1 firefox
-MOZ_WEBRENDER=1 firefox-developer-edition
+QT_QPA_PLATFORM="wayland;xcb"
